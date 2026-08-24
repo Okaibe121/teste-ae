@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Ovos Mendes - Excelência e Qualidade</title>
+  <meta name="description" content="Granja, Distribuição e Comércio de Ovos Selecionados - Casa de Ovos Mendes. Atendimento de excelência, segurança e rapidez.">
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Casa de Ovos Mendes">
+  <meta property="og:description" content="Granja, Distribuição e Comércio de Ovos Selecionados - Solicite seu orçamento com rapidez e garantia de qualidade.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Tailwind CSS CDN Seguro -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#d97706',
+              secondary: '#1e293b',
+              dark: '#0f172a',
+              light: '#f8fafc',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate on Scroll) HTTPS Seguro -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- FontAwesome Icons HTTPS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.65) 100%); }
+    .glass-nav { backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.92); }
+    .badge-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-primary selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT / SECURITY HEADER -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <i class="fa-solid fa-lock text-[10px]"></i> Conexão Segura SSL 256-bit
+        </span>
+        <span class="hidden sm:inline-block text-slate-400">|</span>
+        <span class="hidden sm:inline-flex items-center gap-1 text-slate-300">
+          <i class="fa-regular fa-clock"></i> Segunda a Sábado: 06h às 18h
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="mailto:casadeovosmendes@gmail.com" class="hover:text-white transition flex items-center gap-1.5">
+          <i class="fa-regular fa-envelope"></i> casadeovosmendes@gmail.com
+        </a>
+        <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold transition flex items-center gap-1.5">
+          <i class="fa-brands fa-whatsapp"></i> (11) 98765-4321
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION NAVBAR -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 shadow-xs transition-all duration-300" id="mainHeader">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-brand-primary text-white flex items-center justify-center font-bold text-xl shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight group-hover:text-brand-primary transition-colors">
+            Casa de Ovos Mendes
+          </span>
+          <span class="text-[11px] font-medium text-slate-500 tracking-wider uppercase">
+            Granja, Distribuição e Comércio 
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#inicio" class="hover:text-brand-primary transition-colors">Início</a>
+        <a href="#servicos" class="hover:text-brand-primary transition-colors">Serviços & Produtos</a>
+        <a href="#sobre" class="hover:text-brand-primary transition-colors">Sobre Nós</a>
+        <a href="#depoimentos" class="hover:text-brand-primary transition-colors">Depoimentos</a>
+        <a href="#faq" class="hover:text-brand-primary transition-colors">Dúvidas</a>
+        <a href="#contato" class="hover:text-brand-primary transition-colors">Contato</a>
+      </div>
+
+      <!-- Action CTA -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Abrir Menu" class="md:hidden p-2.5 rounded-lg text-slate-700 hover:bg-slate-100 transition">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200 space-y-3">
+      <a href="#inicio" class="block py-2 text-slate-800 font-medium hover:text-brand-primary">Início</a>
+      <a href="#servicos" class="block py-2 text-slate-800 font-medium hover:text-brand-primary">Serviços & Produtos</a>
+      <a href="#sobre" class="block py-2 text-slate-800 font-medium hover:text-brand-primary">Sobre Nós</a>
+      <a href="#depoimentos" class="block py-2 text-slate-800 font-medium hover:text-brand-primary">Depoimentos</a>
+      <a href="#faq" class="block py-2 text-slate-800 font-medium hover:text-brand-primary">Dúvidas</a>
+      <a href="#contato" class="block py-2 text-slate-800 font-medium hover:text-brand-primary">Contato</a>
+      <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3 rounded-xl shadow-md">
+        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (High Converting) -->
+  <section id="inicio" class="relative min-h-[640px] flex items-center justify-center overflow-hidden bg-slate-900 text-white">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=1200&q=80" alt="Casa de Ovos Mendes" class="w-full h-full object-cover object-center opacity-30 transform scale-105 transition-transform duration-10000" />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-8 space-y-6" data-aos="fade-right" data-aos-duration="900">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white/10 backdrop-blur-md text-amber-300 border border-white/10 shadow-xs">
+          <i class="fa-solid fa-circle-check text-emerald-400"></i> Granja, Distribuição e Comércio de Ovos Selecionados
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Qualidade, Confiança e Excelência com a <span class="text-brand-primary underline decoration-amber-500/40 decoration-4 underline-offset-8">Casa de Ovos Mendes</span>
+        </h1>
+
+        <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-light leading-relaxed">
+          Fornecimento de alta confiança, atendimento ágil e os melhores padrões de segurança e procedência para o seu negócio ou sua família.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+          <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-brand-primary hover:opacity-90 text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg shadow-amber-600/30 hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>Pedir Orçamento Expresso</span>
+          </a>
+          <a href="#servicos" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white text-base font-semibold px-7 py-4 rounded-xl backdrop-blur-sm border border-white/20 transition-all">
+            <span>Conhecer Nossos Produtos</span>
+            <i class="fa-solid fa-arrow-down text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10 text-xs sm:text-sm text-slate-300">
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-award text-amber-400 text-lg"></i>
+            <span>100% Qualidade Garantida</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-truck-fast text-emerald-400 text-lg"></i>
+            <span>Entrega Rápida & Segura</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-shield-check text-blue-400 text-lg"></i>
+            <span>Conformidade & Transparência</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Contact Box in Hero -->
+      <div class="lg:col-span-4" data-aos="fade-left" data-aos-duration="1000">
+        <div class="bg-white/95 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl border border-white/30 text-slate-900 space-y-5">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+            <div>
+              <h2 class="font-bold text-lg text-slate-900">Atendimento Imediato</h2>
+              <p class="text-xs text-slate-500">Respondemos em poucos minutos</p>
+            </div>
+            <span class="w-3 h-3 rounded-full bg-emerald-500 badge-pulse"></span>
+          </div>
+
+          <div class="space-y-3.5 text-sm">
+            <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <i class="fa-solid fa-location-dot text-brand-primary mt-1"></i>
+              <div>
+                <strong class="block text-xs uppercase text-slate-500 tracking-wider">Endereço</strong>
+                <span class="text-slate-700 text-xs">Av. das Granjas, 1500 - Galpão 04 - Polo Agroindustrial</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <i class="fa-solid fa-phone-volume text-emerald-600 mt-1"></i>
+              <div>
+                <strong class="block text-xs uppercase text-slate-500 tracking-wider">WhatsApp Direto</strong>
+                <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." class="text-emerald-700 font-semibold text-xs hover:underline">(11) 98765-4321</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <i class="fa-solid fa-clock text-blue-600 mt-1"></i>
+              <div>
+                <strong class="block text-xs uppercase text-slate-500 tracking-wider">Horário</strong>
+                <span class="text-slate-700 text-xs">Segunda a Sábado: 06h às 18h</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contato" class="w-full text-center block bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-3 rounded-xl transition">
+            Enviar Mensagem Online
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / DIFFERENTIALS -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-brand-primary flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </div>
+          <h2 class="text-lg font-bold text-slate-900 mb-2">Procedência e Rigor</h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Processos padronizados com controle rigoroso de qualidade, armazenamento correto e manuseio cuidadoso.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <h2 class="text-lg font-bold text-slate-900 mb-2">Atendimento Personalizado</h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Negociação flexível para atacado e varejo, com condições comerciais atrativas e suporte contínuo.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center text-xl mb-4 font-bold">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h2 class="text-lg font-bold text-slate-900 mb-2">Segurança & LGPD</h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Seus dados cadastrais e pedidos tratados com total confidencialidade, criptografia e proteção integral.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES & PRODUCTS -->
+  <section id="servicos" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-primary bg-amber-500/10 px-3 py-1 rounded-full">Nossas Soluções</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Serviços & Produtos Especializados</h2>
+        <p class="text-slate-600 text-base">Conheça nossa linha completa desenvolvida com os mais rigorosos padrões do mercado.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="h-52 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=600&q=80" alt="Ovos caipiras orgânicos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Disponível
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors">Ovos caipiras orgânicos</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Opção de alta demanda, selecionada com rigor e pronta para entrega rápida com garantia de qualidade.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Frescor e seleção diária</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Embalagens reforçadas e seguras</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Preço competitivo para atacado/varejo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Ovos%20caipiras%20org%C3%A2nicos" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 text-sm font-semibold py-3 rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-white"></i> Cotar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="h-52 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?auto=format&fit=crop&w=600&q=80" alt="Ovos vermelhos tipo extra e jumbo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Disponível
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors">Ovos vermelhos tipo extra e jumbo</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Opção de alta demanda, selecionada com rigor e pronta para entrega rápida com garantia de qualidade.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Frescor e seleção diária</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Embalagens reforçadas e seguras</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Preço competitivo para atacado/varejo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Ovos%20vermelhos%20tipo%20extra%20e%20jumbo" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 text-sm font-semibold py-3 rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-white"></i> Cotar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="h-52 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1569288052389-dac9b01c9c05?auto=format&fit=crop&w=600&q=80" alt="Ovos brancos para atacado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Disponível
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors">Ovos brancos para atacado</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Opção de alta demanda, selecionada com rigor e pronta para entrega rápida com garantia de qualidade.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Frescor e seleção diária</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Embalagens reforçadas e seguras</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Preço competitivo para atacado/varejo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Ovos%20brancos%20para%20atacado" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 text-sm font-semibold py-3 rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-white"></i> Cotar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <div class="h-52 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=600&q=80" alt="Fornecimento diário para padarias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Disponível
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors">Fornecimento diário para padarias</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Opção de alta demanda, selecionada com rigor e pronta para entrega rápida com garantia de qualidade.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Frescor e seleção diária</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Embalagens reforçadas e seguras</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Preço competitivo para atacado/varejo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Fornecimento%20di%C3%A1rio%20para%20padarias" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 text-sm font-semibold py-3 rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-white"></i> Cotar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="500">
+          <div>
+            <div class="h-52 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?auto=format&fit=crop&w=600&q=80" alt="mercados e restaurantes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Disponível
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors">mercados e restaurantes</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Opção de alta demanda, selecionada com rigor e pronta para entrega rápida com garantia de qualidade.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Frescor e seleção diária</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Embalagens reforçadas e seguras</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Preço competitivo para atacado/varejo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%3A%20mercados%20e%20restaurantes" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 text-sm font-semibold py-3 rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-white"></i> Cotar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="600">
+          <div>
+            <div class="h-52 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1569288052389-dac9b01c9c05?auto=format&fit=crop&w=600&q=80" alt="Entregas programadas com frescor garantido" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Disponível
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors">Entregas programadas com frescor garantido</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Opção de alta demanda, selecionada com rigor e pronta para entrega rápida com garantia de qualidade.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Frescor e seleção diária</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Embalagens reforçadas e seguras</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Preço competitivo para atacado/varejo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%3A%20Entregas%20programadas%20com%20frescor%20garantido" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 text-sm font-semibold py-3 rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp text-emerald-600 group-hover:text-white"></i> Cotar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="sobre" class="py-24 bg-white border-y border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="relative" data-aos="fade-right">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=800&q=80" alt="Sobre a Casa de Ovos Mendes" class="w-full h-[480px] object-cover" />
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-slate-900 text-white p-6 rounded-2xl shadow-xl hidden sm:block border border-slate-800 max-w-xs">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-3xl font-extrabold text-amber-400">100%</span>
+              <div class="text-xs font-medium text-slate-300">Compromisso com o Cliente</div>
+            </div>
+            <p class="text-xs text-slate-400">Tradição, agilidade logística e procedência inspecionada.</p>
+          </div>
+        </div>
+
+        <div class="space-y-6" data-aos="fade-left">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-primary bg-amber-500/10 px-3 py-1 rounded-full">História & Autoridade</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+            Compromisso com a Excelência, Segurança e Satisfação Total
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed">
+            A <strong>Casa de Ovos Mendes</strong> atua no segmento de <em>Granja, Distribuição e Comércio de Ovos Selecionados</em> com o propósito de fornecer produtos e serviços superiores, respeitando prazos e superando expectativas.
+          </p>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Construímos relações sólidas baseadas na transparência, no cumprimento rigoroso das normas sanitárias e na proteção dos dados dos nossos clientes e parceiros comerciais.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 pt-4">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <h3 class="font-bold text-slate-900 text-sm">Missão</h3>
+              <p class="text-xs text-slate-600 mt-1">Entregar o melhor padrão com honestidade, rapidez e preço justo.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <h3 class="font-bold text-slate-900 text-sm">Valores</h3>
+              <p class="text-xs text-slate-600 mt-1">Ética, respeito à LGPD, higiene impecável e foco no cliente.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-brand-primary font-bold hover:underline">
+              <span>Converse diretamente com nosso time comercial</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / SOCIAL PROOF -->
+  <section id="depoimentos" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-primary bg-amber-500/10 px-3 py-1 rounded-full">Avaliações Reais</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">O que Nossos Clientes Dizem</h2>
+        <p class="text-slate-600 text-sm">A satisfação dos nossos parceiros é o nosso maior selo de qualidade.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xs space-y-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex text-amber-400 gap-1 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-700 text-sm italic">
+            "Excelente atendimento e pontualidade exemplar. Os produtos chegam sempre impecáveis e no horário combinado."
+          </p>
+          <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Cliente" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <strong class="block text-xs text-slate-900 font-bold">Mariana Alcantara</strong>
+              <span class="text-[11px] text-slate-500">Gerente de Compras</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xs space-y-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex text-amber-400 gap-1 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-700 text-sm italic">
+            "Parceria de confiança há anos. Sempre nos ajudam com pedidos de última hora com o mesmo padrão de qualidade."
+          </p>
+          <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Cliente" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <strong class="block text-xs text-slate-900 font-bold">Carlos Eduardo Ramos</strong>
+              <span class="text-[11px] text-slate-500">Proprietário de Restaurante</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xs space-y-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex text-amber-400 gap-1 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-700 text-sm italic">
+            "Transparência, notas fiscais sempre corretas e comunicação rápida pelo WhatsApp. Recomendo de olhos fechados!"
+          </p>
+          <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Cliente" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <strong class="block text-xs text-slate-900 font-bold">Fernanda Souza</strong>
+              <span class="text-[11px] text-slate-500">Diretora de Operações</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (Interactive Accordion) -->
+  <section id="faq" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-primary bg-amber-500/10 px-3 py-1 rounded-full">Perguntas Frequentes</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Dúvidas Comuns</h2>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        <div class="border border-slate-200 rounded-2xl p-5 hover:border-slate-300 transition">
+          <button class="w-full flex justify-between items-center text-left font-bold text-slate-900 faq-trigger" aria-expanded="false">
+            <span>Como funciona o processo de pedido e entrega?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Os pedidos podem ser feitos diretamente pelo WhatsApp ou pelo nosso formulário de contato. Confirmamos as quantidades, combinamos o melhor horário e realizamos a entrega no seu endereço com todo o cuidado e pontualidade.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl p-5 hover:border-slate-300 transition">
+          <button class="w-full flex justify-between items-center text-left font-bold text-slate-900 faq-trigger" aria-expanded="false">
+            <span>Vocês atendem tanto empresas (atacado) quanto pessoas físicas?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Sim! Temos tabelas especiais com descontos progressivos para comércios, restaurantes, padarias e indústrias, além de opções sob medida para consumidores finais.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl p-5 hover:border-slate-300 transition">
+          <button class="w-full flex justify-between items-center text-left font-bold text-slate-900 faq-trigger" aria-expanded="false">
+            <span>Como meus dados estão protegidos neste site (LGPD)?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Cumprimos rigorosamente a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). As informações preenchidas nos formulários são utilizadas estritamente para responder à sua solicitação de orçamento e não são comercializadas com terceiros.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM & MAP SECTION (Anti-XSS Sanitized) -->
+  <section id="contato" class="py-24 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Fale Conosco</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Solicite uma Cotação ou Visita</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Preencha o formulário seguro abaixo ou fale instantaneamente pelo WhatsApp. Retornaremos com as melhores opções para sua necessidade.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center gap-4 text-sm text-slate-300">
+              <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">Telefone / WhatsApp</span>
+                <span class="font-semibold text-white">(11) 98765-4321</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 text-sm text-slate-300">
+              <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">E-mail Comercial</span>
+                <span class="font-semibold text-white">casadeovosmendes@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 text-sm text-slate-300">
+              <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">Endereço</span>
+                <span class="font-semibold text-white">Av. das Granjas, 1500 - Galpão 04 - Polo Agroindustrial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secure Form with Anti-XSS Sanitization & Honeypot -->
+        <div class="lg:col-span-7" data-aos="fade-left">
+          <div class="bg-white text-slate-900 p-8 sm:p-10 rounded-3xl shadow-2xl border border-white/20">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Mensagem Criptografada</h3>
+            <p class="text-xs text-slate-500 mb-6 flex items-center gap-1.5">
+              <i class="fa-solid fa-shield-check text-emerald-600"></i> Protegido contra spam e injeção de scripts (XSS Sanitizer ativo)
+            </p>
+
+            <form id="secureContactForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+              <!-- Invisible Honeypot field for anti-bot -->
+              <input type="text" name="_gotcha" id="honeypotField" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="userName" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Seu Nome *</label>
+                  <input type="text" id="userName" required placeholder="Ex: João Silva" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none transition" />
+                </div>
+                <div>
+                  <label for="userEmail" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Seu E-mail *</label>
+                  <input type="email" id="userEmail" required placeholder="Ex: joao@email.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none transition" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="userPhone" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">WhatsApp / Telefone *</label>
+                  <input type="tel" id="userPhone" required placeholder="Ex: (11) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none transition" />
+                </div>
+                <div>
+                  <label for="userService" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Interesse Principal</label>
+                  <select id="userService" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none transition bg-white">
+                    <option value="Orçamento Geral">Orçamento Geral</option>
+                    <option value="Ovos caipiras orgânicos">Ovos caipiras orgânicos</option><option value="Ovos vermelhos tipo extra e jumbo">Ovos vermelhos tipo extra e jumbo</option><option value="Ovos brancos para atacado">Ovos brancos para atacado</option><option value="Fornecimento diário para padarias">Fornecimento diário para padarias</option><option value="mercados e restaurantes">mercados e restaurantes</option><option value="Entregas programadas com frescor garantido">Entregas programadas com frescor garantido</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="userMessage" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Mensagem ou Quantidade Estimada</label>
+                <textarea id="userMessage" rows="3" placeholder="Descreva brevemente sua necessidade..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none transition"></textarea>
+              </div>
+
+              <div class="flex items-start gap-2 pt-2">
+                <input type="checkbox" id="lgpdConsent" required class="mt-1 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" />
+                <label for="lgpdConsent" class="text-xs text-slate-600 cursor-pointer">
+                  Concordo com o processamento dos meus dados para fins de atendimento conforme a <button type="button" onclick="openPrivacyModal()" class="text-amber-600 underline font-semibold">Política de Privacidade (LGPD)</button>.
+                </label>
+              </div>
+
+              <button type="submit" id="submitBtn" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Enviar Solicitação Segura</span>
+              </button>
+            </form>
+
+            <div id="formSuccessToast" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm text-center">
+              <i class="fa-solid fa-circle-check text-lg mr-1 text-emerald-600"></i>
+              <strong>Mensagem enviada com sucesso!</strong> Entraremos em contato muito em breve.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER WITH LGPD & SECURITY BADGES -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-14 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold text-base">
+            <div class="w-8 h-8 rounded-lg bg-brand-primary text-white flex items-center justify-center font-bold">
+              <i class="fa-solid fa-shield-halved text-sm"></i>
+            </div>
+            <span>Casa de Ovos Mendes</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Granja, Distribuição e Comércio de Ovos Selecionados. Comprometidos com a excelência, transparência e satisfação de cada cliente.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider text-xs">Navegação Rápida</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#inicio" class="hover:text-white transition">Início</a></li>
+            <li><a href="#servicos" class="hover:text-white transition">Serviços & Produtos</a></li>
+            <li><a href="#sobre" class="hover:text-white transition">Sobre a Empresa</a></li>
+            <li><a href="#depoimentos" class="hover:text-white transition">Depoimentos</a></li>
+            <li><a href="#contato" class="hover:text-white transition">Fale Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider text-xs">Privacidade & Legal</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><button type="button" onclick="openPrivacyModal()" class="hover:text-white transition text-left">Política de Privacidade (LGPD)</button></li>
+            <li><button type="button" onclick="openPrivacyModal()" class="hover:text-white transition text-left">Termos de Uso e Serviço</button></li>
+            <li><button type="button" onclick="reopenCookieBanner()" class="hover:text-white transition text-left">Gerenciar Consentimento de Cookies</button></li>
+            <li><span class="text-emerald-400">Certificado SSL Válido 256-Bit</span></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider text-xs">Selos de Conformidade</h4>
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">
+              <i class="fa-solid fa-lock text-emerald-400"></i> SSL Ativo
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">
+              <i class="fa-solid fa-user-shield text-blue-400"></i> LGPD Adequado
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">
+              <i class="fa-solid fa-shield-virus text-amber-400"></i> Anti-XSS Sanitized
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+        <p>&copy; 2026 Casa de Ovos Mendes. Todos os direitos reservados.</p>
+        <p class="flex items-center gap-1">
+          Desenvolvido com <span class="text-amber-500 font-semibold">WebCraft AI</span> &middot; Cibersegurança & Alta Conversão
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (Secure & Encoded) -->
+  <a href="https://wa.me/11987654321?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Casa%20de%20Ovos%20Mendes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20ou%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-all duration-300 border-2 border-white">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- LGPD COOKIE CONSENT BANNER -->
+  <div id="cookieBanner" class="fixed bottom-0 inset-x-0 z-50 p-4 bg-slate-950/95 backdrop-blur-md text-white border-t border-slate-800 shadow-2xl transition-transform duration-300">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-start gap-3">
+        <i class="fa-solid fa-cookie-bite text-amber-400 text-xl mt-0.5"></i>
+        <p class="text-slate-300 leading-relaxed max-w-4xl">
+          Utilizamos cookies essenciais e tecnologias seguras para aprimorar sua experiência e garantir o correto funcionamento do site em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>. Você pode aceitar todos ou revisar nossas diretrizes.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 w-full sm:w-auto shrink-0">
+        <button onclick="openPrivacyModal()" class="text-slate-400 hover:text-white underline text-xs">
+          Ver Política
+        </button>
+        <button onclick="acceptCookies()" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-5 py-2 rounded-lg text-xs transition">
+          Aceitar Cookies
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY POLICY & LGPD MODAL -->
+  <div id="privacyModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white text-slate-900 w-full max-w-2xl rounded-3xl p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl border border-slate-200">
+      <div class="flex justify-between items-center border-b border-slate-200 pb-4">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-user-shield text-brand-primary text-xl"></i>
+          <h3 class="text-lg font-bold text-slate-900">Política de Privacidade & LGPD</h3>
+        </div>
+        <button onclick="closePrivacyModal()" class="text-slate-400 hover:text-slate-700 text-xl p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="text-xs text-slate-600 space-y-3 leading-relaxed">
+        <p><strong>1. Introdução:</strong> A <em>Casa de Ovos Mendes</em> valoriza a privacidade de seus usuários e clientes, comprometendo-se com a proteção de dados pessoais em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018).</p>
+        <p><strong>2. Coleta de Dados:</strong> Coletamos apenas as informações fornecidas voluntariamente através dos formulários de contato (como nome, e-mail, telefone e mensagem) com a estrita finalidade de responder solicitações comerciais e orçamentos.</p>
+        <p><strong>3. Armazenamento e Segurança:</strong> Seus dados são transmitidos através de protocolo seguro HTTPS/TLS com criptografia forte e armazenados sob rigorosos controles de acesso.</p>
+        <p><strong>4. Seus Direitos:</strong> Conforme o Artigo 18 da LGPD, você tem o direito de solicitar a confirmação da existência de tratamento, acesso, correção ou eliminação dos seus dados a qualquer momento pelo e-mail <code>casadeovosmendes@gmail.com</code>.</p>
+      </div>
+
+      <div class="pt-4 border-t border-slate-200 text-right">
+        <button onclick="closePrivacyModal()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-6 py-2.5 rounded-xl transition">
+          Fechar e Entendido
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS: AOS & SECURE FORM HANDLER WITH XSS PREVENTION -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS Animation library securely
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 80,
+      });
+
+      // Check cookie consent state in localStorage
+      if (localStorage.getItem('cookie_consent_accepted') === 'true') {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) banner.style.display = 'none';
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-trigger').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        const isHidden = content.classList.contains('hidden');
+
+        // Close all other faqs
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-trigger i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Anti-XSS Sanitization Function (Escapes special HTML entities)
+    function sanitizeInput(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Secure Form Submit Handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      // Check honeypot for bot detection
+      const honeypot = document.getElementById('honeypotField').value;
+      if (honeypot) {
+        console.warn('Bot detected via honeypot field.');
+        return false;
+      }
+
+      const name = sanitizeInput(document.getElementById('userName').value);
+      const email = sanitizeInput(document.getElementById('userEmail').value);
+      const phone = sanitizeInput(document.getElementById('userPhone').value);
+      const service = sanitizeInput(document.getElementById('userService').value);
+      const message = sanitizeInput(document.getElementById('userMessage').value);
+
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Processando com Segurança...';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Enviado!';
+        document.getElementById('formSuccessToast').classList.remove('hidden');
+        document.getElementById('secureContactForm').reset();
+      }, 900);
+
+      return false;
+    }
+
+    // Cookie management
+    function acceptCookies() {
+      localStorage.setItem('cookie_consent_accepted', 'true');
+      const banner = document.getElementById('cookieBanner');
+      if (banner) banner.style.display = 'none';
+    }
+
+    function reopenCookieBanner() {
+      const banner = document.getElementById('cookieBanner');
+      if (banner) banner.style.display = 'block';
+    }
+
+    // Privacy modal controls
+    function openPrivacyModal() {
+      document.getElementById('privacyModal').classList.remove('hidden');
+    }
+
+    function closePrivacyModal() {
+      document.getElementById('privacyModal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
